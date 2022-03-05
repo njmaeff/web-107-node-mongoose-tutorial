@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2015",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "out",
+    "sourceMap": true,
+    "rootDir": "src"
+  }
+}
