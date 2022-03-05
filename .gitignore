@@ -176,3 +176,5 @@ src/**/*.js
 !src/**/*.config.js
 root
 .rollup.cache
+# since this is a tutorial we are exposing our .env file
+!.env

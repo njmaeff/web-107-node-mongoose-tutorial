@@ -1,7 +1,10 @@
 require('dotenv').config();
+import {connect} from "../connect";
+
 
 export async function clean() {
-
+    const {connection} = await connect();
+    await connection.db.dropDatabase()
 }
 
 const run = async () => {

@@ -1,21 +1,12 @@
+require('dotenv').config();
 import express from "express"
 import bodyParser from "body-parser";
+import blog from "./routes/blog";
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public'))
+app.use(bodyParser.json());
 
-app.get('/', async function (req, res) {
-
-});
-
-app.get(`/api/insert`, async (req, res) => {
-});
-
-app.get(`/api/delete`, async (req, res) => {
-});
-
-app.get(`/api/update`, async (req, res) => {
-});
-
+// add our blog post route to the express server api
+app.use('/api', blog)
 app.listen(8080)

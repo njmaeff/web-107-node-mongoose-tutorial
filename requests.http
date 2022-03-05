@@ -1,0 +1,33 @@
+### GetBlogByID
+GET http://localhost:8080/api/blog/29a95f357e10e2b0ffdd4ccb
+Accept: application/json
+
+### GetAllBlogs
+GET http://localhost:8080/api/blogs
+Accept: application/json
+
+### UpdateBlogByID
+PUT http://localhost:8080/api/blog/29a95f357e10e2b0ffdd4ccb
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "updated title"
+}
+
+### DeleteBlogByID
+DELETE http://localhost:8080/api/blog/29a95f357e10e2b0ffdd4ccb
+Accept: application/json
+
+### CreateBlogByID
+POST http://localhost:8080/api/blog
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "My Blog Title",
+  "content": "This is my blog",
+  "author": "Nik Jmaeff"
+}
+
+

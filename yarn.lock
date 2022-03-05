@@ -25,11 +25,12 @@ __metadata:
   dependencies:
     "@faker-js/faker": ^6.0.0-alpha.7
     "@types/express": ^4.17.13
+    "@types/lodash": ^4.14.179
     "@types/node": ^17.0.21
     body-parser: ^1.19.1
     dotenv: ^16.0.0
     express: ^4.17.2
-    mongodb: ^4.3.1
+    lodash: ^4.17.21
     mongoose: ^6.2.4
     nodemon: ^2.0.15
     typescript: ^4.5.4
@@ -127,6 +128,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: b5f8aa592cc21c16d99e69aec0976f12b893b055e4456d90148a610a6b6088e297b2ba5f38f8c8280cef006cfd8f9ec99e069905020882619dc5fc8aa46f5f27
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.179":
+  version: 4.14.179
+  resolution: "@types/lodash@npm:4.14.179"
+  checksum: 71faa0c8071732c2b7f0bd092850d3cea96fc7912055d57d819cf2ab399a64150e4190d8a4ea35a0905662ddc118be9d2abd55891d8047c085acf98608156149
   languageName: node
   linkType: hard
 
@@ -1310,6 +1318,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
 "lowercase-keys@npm:^1.0.0, lowercase-keys@npm:^1.0.1":
   version: 1.0.1
   resolution: "lowercase-keys@npm:1.0.1"
@@ -1528,7 +1543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-connection-string-url@npm:^2.4.1, mongodb-connection-string-url@npm:^2.5.2":
+"mongodb-connection-string-url@npm:^2.4.1":
   version: 2.5.2
   resolution: "mongodb-connection-string-url@npm:2.5.2"
   dependencies:
@@ -1551,22 +1566,6 @@ __metadata:
     saslprep:
       optional: true
   checksum: 5684b5481bfbf73e4628b8bad7018cd4436fdb23b9548fb38dece3e079b1716fe870d41070a505d13ae4d86c107315afaf34891ba2b64925eb4fa4cd5bb70300
-  languageName: node
-  linkType: hard
-
-"mongodb@npm:^4.3.1":
-  version: 4.4.1
-  resolution: "mongodb@npm:4.4.1"
-  dependencies:
-    bson: ^4.6.1
-    denque: ^2.0.1
-    mongodb-connection-string-url: ^2.5.2
-    saslprep: ^1.0.3
-    socks: ^2.6.2
-  dependenciesMeta:
-    saslprep:
-      optional: true
-  checksum: 5a2924df04612cc3dfd54e6f4a9b4ab01683fe2bcb8a6aa424485939fc213aea4c7e9b59ef244aa30ccc14948906990335a6371310fe354aec8206983f3f733a
   languageName: node
   linkType: hard
 
@@ -2103,7 +2102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socks@npm:^2.6.1, socks@npm:^2.6.2":
+"socks@npm:^2.6.1":
   version: 2.6.2
   resolution: "socks@npm:2.6.2"
   dependencies:
